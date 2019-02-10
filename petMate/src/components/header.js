@@ -23,9 +23,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height:60,
     paddingTop: 15,
-    shadowColor: 'black',
-    shadowOffset: {width:0, height: 2},
-    shadowOpacity: 0.2,
+    shadowColor: '#000',
+    shadowOffset:{width:0,height:2},
+    shadowOpacity:0.1,
+    shadowRadius:2,
+    elevation:2,
+
 
   },
   titleText: {

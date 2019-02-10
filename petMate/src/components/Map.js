@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {StyleSheet,View} from 'react-native';
+import {ScrollView,View} from 'react-native';
 import axios from 'axios';
-import AlbumDetails from './albumDetails'
+import MapDetails from './mapDetails'
 
 export default class Map extends React.Component{
   //data loading
@@ -16,15 +16,15 @@ export default class Map extends React.Component{
   renderAlbum()
   {
     return this.state.albums.map(album =>
-      <AlbumDetails key={album.title} album={album} />
+      <MapDetails key={album.title} album={album} />
   );
   }
   render(){
     console.log(this.state);
     return(
-      <View>
+      <ScrollView>
       {this.renderAlbum()}
-      </View>
+      </ScrollView>
 
     );
   }
